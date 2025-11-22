@@ -6,7 +6,7 @@ import avatarImg from "../assets/avatar.png";
 import { useSelector } from "react-redux";
 import { UseAuth } from "../context/AuthContext";
 import { useFetchAllBooksQuery } from "../redux/features/books/booksAPI";
-import { getImgUrl } from "../utils/getImgUrl";
+import { getImgUrl } from "../utils/getImgUrl.js";
 import { SiGitbook } from "react-icons/si";
 const navigation = [
   { name: "Dashboard", href: "/user-dashboard" },
