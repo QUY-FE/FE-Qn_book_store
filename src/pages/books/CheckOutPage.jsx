@@ -6,7 +6,7 @@ import { UseAuth } from "../../context/AuthContext";
 import { useCreateOrderMutation } from "../../redux/features/orders/ordersApi";
 import Swal from "sweetalert2";
 import { clearCart } from "../../redux/features/cart/cartSlice";
-import { imgurl } from "../../utils/imgurl"; // Nhớ import hàm lấy ảnh
+import { imgurl } from "../../utils/imgurl.js"; // Nhớ import hàm lấy ảnh
 
 const CheckOutPage = () => {
   const [createOrder, { isLoading }] = useCreateOrderMutation();

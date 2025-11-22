@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { imgurl } from "../../utils/imgurl";
+import { imgurl } from "../../utils/imgurl.js";
 import { useDispatch } from "react-redux";
 import { clearCart, removeFromCart } from "../../redux/features/cart/cartSlice";
 const CartPage = () => {

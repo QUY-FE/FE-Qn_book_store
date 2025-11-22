@@ -1,7 +1,7 @@
 import React from "react";
 import { useGetOrderByEmailQuery } from "../../redux/features/orders/ordersApi";
 import { UseAuth } from "../../context/AuthContext";
-import { imgurl } from "../../utils/imgurl";
+import { imgurl } from "../../utils/imgurl.js";
 import { useFetchAllBooksQuery } from "../../redux/features/books/booksAPI"; // Import API lấy sách
 
 const OrderPage = () => {

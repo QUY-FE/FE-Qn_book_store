@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { imgurl } from "../../utils/imgurl";
+import { imgurl } from "../../utils/imgurl.js";
 import { useNavigate, useParams } from "react-router-dom";
 import { FiShoppingCart, FiStar, FiUser, FiCalendar } from "react-icons/fi";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa"; // Icon ngôi sao
