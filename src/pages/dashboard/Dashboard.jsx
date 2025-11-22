@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import getBaseUrl from "../../utils/baseUrl";
 import Loading from "../../components/Loading";
 import { MdIncompleteCircle } from "react-icons/md";
 import RevenueChart from "./RevenueChart";
@@ -14,7 +12,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${getBaseUrl()}/api/admin`, {
+        const response = await axios.get(`${import.meta.env.VITE_API_KEY}/admin`, {
           headers: {
             "Content-Type": "application/json",
             "Authorization": `Bearer ${localStorage.getItem("token")}`,

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import getBaseUrl from '../utils/baseUrl';
 import { useNavigate } from 'react-router-dom';
 import Swal from "sweetalert2";
 const AdminLogin = () => {
@@ -13,7 +12,7 @@ const AdminLogin = () => {
 
     const onSubmit = async (data) => {
     try {
-      const response = await axios.post(`${getBaseUrl()}/api/auth/admin`, data, {
+      const response = await axios.post(`${import.meta.env.VITE_API_KEY}/auth/admin`, data, {
         headers: {
           "Content-Type": "application/json",
         }
