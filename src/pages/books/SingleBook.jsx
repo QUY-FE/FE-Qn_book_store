@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getImgUrl } from "../../utils/getImgUrl";
+import { imgurl } from "../../utils/imgurl";
 import { useNavigate, useParams } from "react-router-dom";
 import { FiShoppingCart, FiStar, FiUser, FiCalendar } from "react-icons/fi";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa"; // Icon ngôi sao
@@ -92,7 +92,7 @@ const SingleBook = () => {
           <div className="w-full md:w-1/3 flex justify-center items-start">
             <div className="relative w-full max-w-[350px] shadow-2xl rounded-lg overflow-hidden border">
               <img
-                src={`${getImgUrl(book?.coverImage)}`}
+                src={`${imgurl(book?.coverImage)}`}
                 alt={book?.title}
                 className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
               />

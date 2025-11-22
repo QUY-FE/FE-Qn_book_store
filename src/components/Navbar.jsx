@@ -6,7 +6,7 @@ import avatarImg from "../assets/avatar.png";
 import { useSelector } from "react-redux";
 import { UseAuth } from "../context/AuthContext";
 import { useFetchAllBooksQuery } from "../redux/features/books/booksAPI";
-import { getImgUrl } from "../utils/getImgUrl.js";
+import { imgurl } from "../utils/imgurl.js";
 import { SiGitbook } from "react-icons/si";
 const navigation = [
   { name: "Dashboard", href: "/user-dashboard" },
@@ -96,7 +96,7 @@ const Navbar = () => {
                       className="flex items-center gap-3 p-3 hover:bg-gray-100 transition-colors border-b last:border-b-0"
                     >
                       <img 
-                        src={getImgUrl(book.coverImage)} 
+                        src={imgurl(book.coverImage)} 
                         alt={book.title} 
                         className="w-10 h-14 object-cover rounded shadow-sm"
                       />

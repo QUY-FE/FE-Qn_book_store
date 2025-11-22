@@ -1,7 +1,7 @@
 import React from "react";
 import { useGetOrderByEmailQuery } from "../../redux/features/orders/ordersApi";
 import { UseAuth } from "../../context/AuthContext";
-import { getImgUrl } from "../../utils/getImgUrl";
+import { imgurl } from "../../utils/imgurl";
 import { useFetchAllBooksQuery } from "../../redux/features/books/booksAPI"; // Import API lấy sách
 
 const OrderPage = () => {
@@ -83,7 +83,7 @@ const OrderPage = () => {
                                     {/* Ảnh sản phẩm */}
                                     <div className="w-16 h-20 flex-shrink-0 border rounded overflow-hidden bg-gray-100">
                                         <img 
-                                            src={getImgUrl(product.coverImage)} 
+                                            src={imgurl(product.coverImage)} 
                                             alt={product.title} 
                                             className="w-full h-full object-cover"
                                         />
