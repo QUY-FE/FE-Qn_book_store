@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import { AuthProvide } from "./context/AuthContext";
 
 function App() {
+  
   return (
     <>
     <AuthProvide>

@@ -18,6 +18,7 @@ const categories = [
 ];
 
 const TopSeller = () => {
+  
   // Khởi tạo mặc định là 'ALL' thay vì undefined
   const [selectedCategory, setSelectedCategory] = useState("ALL");
   const { data: books = [] } = useFetchAllBooksQuery();

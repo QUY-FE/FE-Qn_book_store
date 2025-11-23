@@ -182,11 +182,7 @@ const Navbar = () => {
               <p className="absolute top-0 right-1 px-1 text-xs rounded-lg bg-primary font-black">
                 {cartItems.length}
               </p>
-            ) : (
-              <span className="absolute top-0 right-1 px-1 text-xs rounded-lg bg-primary font-black" >
-                0
-              </span>
-            )}
+            ) : null}
           </Link>
         </div>
       </nav>
